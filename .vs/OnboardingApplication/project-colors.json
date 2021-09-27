@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2009e0ce-7255-4c7f-b5c5-da490663394c": {
+      "ProjectGuid": "2009e0ce-7255-4c7f-b5c5-da490663394c",
+      "DisplayName": "WebAPI",
+      "ColorIndex": 0
+    },
+    "7a700db5-e18b-45b8-a873-d5de6479afc5": {
+      "ProjectGuid": "7a700db5-e18b-45b8-a873-d5de6479afc5",
+      "DisplayName": "PlayerCollection",
+      "ColorIndex": 1
+    },
+    "33ccefb3-0f10-4dba-92e3-4a9dd876e7d3": {
+      "ProjectGuid": "33ccefb3-0f10-4dba-92e3-4a9dd876e7d3",
+      "DisplayName": "UserActorService",
+      "ColorIndex": 2
+    },
+    "dd7ba961-1197-45fd-a748-198ef84cecd4": {
+      "ProjectGuid": "dd7ba961-1197-45fd-a748-198ef84cecd4",
+      "DisplayName": "UserActor",
+      "ColorIndex": 3
+    },
+    "46a7075c-7257-4135-a83b-cd1c5c52311f": {
+      "ProjectGuid": "46a7075c-7257-4135-a83b-cd1c5c52311f",
+      "DisplayName": "UserActor.Interfaces",
+      "ColorIndex": 4
+    },
+    "e9a8a065-2e86-4b77-8d0c-03cf29913f6f": {
+      "ProjectGuid": "e9a8a065-2e86-4b77-8d0c-03cf29913f6f",
+      "DisplayName": "OnboardingApplication",
+      "ColorIndex": 5
+    },
+    "6bc8c011-9e87-4f61-960e-729416d32e46": {
+      "ProjectGuid": "6bc8c011-9e87-4f61-960e-729416d32e46",
+      "DisplayName": "PlayerCollection.Model",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "d079134d-d25e-4f3e-9bdd-67405d03fce1": {
+      "ProjectGuid": "d079134d-d25e-4f3e-9bdd-67405d03fce1",
+      "DisplayName": "Common",
+      "ColorIndex": 7
+    },
+    "83ef62af-304f-43fb-b4c9-07724419ba53": {
+      "ProjectGuid": "83ef62af-304f-43fb-b4c9-07724419ba53",
+      "DisplayName": "Game",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

@@ -1,0 +1,17 @@
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\UserActor.Interfaces.deps.json
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\UserActor.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\ref\UserActor.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\UserActor.Interfaces.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\Common.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\PlayerCollection.Model.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\PlayerCollection.Model.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\bin\x64\Debug\net5.0\Common.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.csproj.AssemblyReference.cache
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.AssemblyInfoInputs.cache
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.AssemblyInfo.cs
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\ref\UserActor.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.csproj.CopyComplete
