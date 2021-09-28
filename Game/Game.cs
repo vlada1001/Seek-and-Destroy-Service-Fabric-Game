@@ -56,8 +56,6 @@ namespace Game
 
                         var actor1 = PlayersController.GetActor(Guid.Parse(p1.Id));
 
-                        // if player1 is exploring the map, look for fight
-                        // if it's in fight, decide the winner
                         if (p1.State == StatusToString(Status.Exploring))
                         {
                             foreach (PlayerAPI p2 in players)
@@ -67,7 +65,7 @@ namespace Game
 
                                 if (!p1.Equals(p2))
                                 {
-                                    double distance = Math.Sqrt(p1.Coordinates.X * p2.Coordinates.X + p1.Coordinates.Y * p2.Coordinates.Y);
+                                    double distance = Distance(p1.Coordinates.X, p2.Coordinates.X, p1.Coordinates.Y, p2.Coordinates.Y);
                                     if (p1.State == StatusToString(Status.Exploring)
                                         && p2.State == StatusToString(Status.Exploring)
                                         && distance < 10)

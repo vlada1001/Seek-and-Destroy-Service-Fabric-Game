@@ -36,5 +36,10 @@ namespace Common
             random.NextBytes(bytes);
             return BitConverter.ToInt64(bytes, 0);
         }
+
+        public static double Distance(int x1, int x2, int y1, int y2)
+        {
+            return Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        }
     }
 }
