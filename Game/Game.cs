@@ -21,9 +21,6 @@ namespace Game
             : base(context)
         {
             client.BaseAddress = new Uri("http://localhost:7890/api/players/");
-            //client.DefaultRequestHeaders.Accept.Clear();
-            //client.DefaultRequestHeaders.Accept.Add(
-            //    new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
@@ -121,36 +118,36 @@ namespace Game
                     }
                 }
 
-                await Task.Delay(TimeSpan.FromSeconds(2), cancellationToken);
+                await Task.Delay(TimeSpan.FromSeconds(3), cancellationToken);
             }
         }
 
-        protected async Task<HttpResponseMessage> GetPlayers(HttpClient client, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseMessage> GetPlayers(HttpClient client, CancellationToken cancellationToken = default)
         {
             return await client.GetAsync("", cancellationToken);
         }
 
-        protected async Task<HttpResponseMessage> GetPlayer(HttpClient client, Guid playerId, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseMessage> GetPlayer(HttpClient client, Guid playerId, CancellationToken cancellationToken = default)
         {
             return await client.GetAsync($"{playerId}", cancellationToken);
         }
 
-        protected async Task<HttpResponseMessage> MovePlayer(HttpClient client, Guid playerId, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseMessage> MovePlayer(HttpClient client, Guid playerId, CancellationToken cancellationToken = default)
         {
             return await client.GetAsync($"movePlayer/{playerId}", cancellationToken);
         }
 
-        protected async Task<HttpResponseMessage> MovePlayers(HttpClient client, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseMessage> MovePlayers(HttpClient client, CancellationToken cancellationToken = default)
         {
             return await client.GetAsync($"movePlayers", cancellationToken);
         }
 
-        protected async Task<HttpResponseMessage> DeletePlayer(HttpClient client, Guid playerId, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseMessage> DeletePlayer(HttpClient client, Guid playerId, CancellationToken cancellationToken = default)
         {
             return await client.DeleteAsync($"deletePlayer/{playerId}", cancellationToken);
         }
 
-        protected async Task<HttpResponseMessage> CreatePlayer(HttpClient client, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseMessage> CreatePlayer(HttpClient client, CancellationToken cancellationToken = default)
         {
             return await client.PutAsync($"createPlayer", null, cancellationToken);
         }

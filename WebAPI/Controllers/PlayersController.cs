@@ -75,11 +75,12 @@ namespace WebAPI.Controllers
             IUserActor actor = GetActor(playerId);
             await actor.DeletePlayerAsync();
 
-            IActorService userActorServiceProxy = ActorServiceProxy.Create(
-                new Uri("fabric:/OnboardingApplication/UserActorService"),
-                actor.GetActorId());
+            //IActorService userActorServiceProxy = ActorServiceProxy.Create(
+            //    new Uri("fabric:/OnboardingApplication/UserActorService"),
+            //    actor.GetActorId());
 
-            await userActorServiceProxy.DeleteActorAsync(actor.GetActorId(), CancellationToken.None);
+            await actor.DeletePlayerAsync();
+            //await userActorServiceProxy.DeleteActorAsync(actor.GetActorId(), CancellationToken.None);
         }
 
         [HttpGet("movePlayer/{playerId}")]

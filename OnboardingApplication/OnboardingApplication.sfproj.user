@@ -5,5 +5,6 @@
     <IsStartupProjectCheckComplete>true</IsStartupProjectCheckComplete>
     <LaunchTarget>..\WebAPI\WebAPI.csproj</LaunchTarget>
     <LastServiceLocation />
+    <ApplicationDebugMode>Remove</ApplicationDebugMode>
   </PropertyGroup>
 </Project>

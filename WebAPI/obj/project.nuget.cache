@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "swzVgdVJwhxG3u+cz7iSU0Vx6S5SMTTTj7GiT80+yJpsaYv0tWZ/ChgR0DB9m5EQqdAWwDFAJjWu7pa+Vo3i5A==",
+  "dgSpecHash": "WNw5LW9oGaYMTAUpVDX2vacY96x1Ac5ZeJA3YcfyeaZcz6ZVYDcwmrSkn4RINgYvon0YcKUa6rXMKBxx0OJ2sQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -74,10 +74,10 @@
     "C:\\Users\\vlada\\.nuget\\packages\\runtime.win.system.net.primitives\\4.0.11\\runtime.win.system.net.primitives.4.0.11.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\runtime.win.system.runtime.extensions\\4.1.0\\runtime.win.system.runtime.extensions.4.1.0.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\runtime.win7.system.private.uri\\4.0.1\\runtime.win7.system.private.uri.4.0.1.nupkg.sha512",
-    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.2\\swashbuckle.aspnetcore.6.2.2.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.2\\swashbuckle.aspnetcore.swagger.6.2.2.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.2\\swashbuckle.aspnetcore.swaggergen.6.2.2.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.2\\swashbuckle.aspnetcore.swaggerui.6.2.2.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\system.buffers\\4.0.0\\system.buffers.4.0.0.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",

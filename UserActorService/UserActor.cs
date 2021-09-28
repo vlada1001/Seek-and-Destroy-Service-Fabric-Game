@@ -1,3 +1,4 @@
+using GameConsole;
 using Microsoft.ServiceFabric.Actors;
 using Microsoft.ServiceFabric.Actors.Runtime;
 using PlayerCollection.Model;
@@ -25,7 +26,7 @@ namespace UserActor
 
         public async Task DeletePlayerAsync(CancellationToken cancellationToken = default)
         {
-            await StateManager.TryRemoveStateAsync("player", cancellationToken);
+            await StateManager.TryRemoveStateAsync("player");
             PlayersController.CreateProxy();
             await PlayersController._service.DeletePlayerAsync(Id.GetGuidId(), cancellationToken);
         }
@@ -45,7 +46,8 @@ namespace UserActor
                 player = await StateManager.AddOrUpdateStateAsync<Player>("player", null, (key, value) => value.Move(), cancellationToken);
                 PlayersController.CreateProxy();
                 await PlayersController._service.UpdatePlayerAsync(player, cancellationToken);
-                ActorEventSource.Current.ActorMessage(this, $"[USER.MOVE]: {player.Username} moved to {player.Coordinates}.");
+                GameConsoleEventSource.Current.Message($"[USER.MOVE]: {player.Username} moved to {player.Coordinates}.");
+                //ActorEventSource.Current.ActorMessage(this, $"[USER.MOVE]: {player.Username} moved to {player.Coordinates}.");
             }
         }
         public Task UpdatePlayerAsync(Player player, CancellationToken cancellationToken = default)
@@ -55,14 +57,15 @@ namespace UserActor
 
         protected override Task OnActivateAsync()
         {
-            ActorEventSource.Current.ActorMessage(this, $"[USER.CREATE]: {Id} logged in.");
-
+            GameConsoleEventSource.Current.Message($"[USER.CREATE]: {Id} logged in.");
+            //ActorEventSource.Current.ActorMessage(this, $"[USER.CREATE]: {Id} logged in.");
             return Task.CompletedTask;
         }
 
         protected override Task OnDeactivateAsync()
         {
-            ActorEventSource.Current.ActorMessage(this, $"[USER.DELETE]: {Id} logged out.");
+            GameConsoleEventSource.Current.Message($"[USER.DELETE]: {Id} logged out.");
+            //ActorEventSource.Current.ActorMessage(this, $"[USER.DELETE]: {Id} logged out.");
             return base.OnDeactivateAsync();
         }
     }

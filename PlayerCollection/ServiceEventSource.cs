@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace PlayerCollection
 {
-    [EventSource(Name = "MyCompany-OnboardingApplication-PlayerCollection")]
+    [EventSource(Name = "Microsoft-OnboardingApplication-PlayerCollection")]
 internal sealed class ServiceEventSource : EventSource
 {
     public static readonly ServiceEventSource Current = new ServiceEventSource();

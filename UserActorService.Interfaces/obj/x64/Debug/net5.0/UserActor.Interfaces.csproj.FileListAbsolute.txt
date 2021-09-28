@@ -14,4 +14,3 @@ C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\ob
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.dll
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\ref\UserActor.Interfaces.dll
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.pdb
-C:\Users\vlada\source\repos\OnboardingApplication\UserActorService.Interfaces\obj\x64\Debug\net5.0\UserActor.Interfaces.csproj.CopyComplete

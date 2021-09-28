@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game", "Game\Game.csproj", "{83EF62AF-304F-43FB-B4C9-07724419BA53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameConsole", "GameConsole\GameConsole.csproj", "{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,14 @@ Global
 		{83EF62AF-304F-43FB-B4C9-07724419BA53}.Release|Any CPU.Build.0 = Release|Any CPU
 		{83EF62AF-304F-43FB-B4C9-07724419BA53}.Release|x64.ActiveCfg = Release|Any CPU
 		{83EF62AF-304F-43FB-B4C9-07724419BA53}.Release|x64.Build.0 = Release|Any CPU
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Debug|x64.ActiveCfg = Debug|x64
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Debug|x64.Build.0 = Debug|x64
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Release|x64.ActiveCfg = Release|Any CPU
+		{29C1E4E5-CC60-4445-8F83-B06FDC7D8C7E}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,8 @@
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.exe
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.exe
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.exe
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.deps.json
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.runtimeconfig.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.deps.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.runtimeconfig.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\appsettings.Development.json
@@ -386,9 +389,11 @@ C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debu
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\de-DE\Faker.Net.5.0.resources.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\libuv.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\Common.dll
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\PlayerCollection.Model.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.Interfaces.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.dll
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.Interfaces.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\Common.pdb

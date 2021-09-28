@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace WebAPI
 {
-    [EventSource(Name = "MyCompany-OnboardingApplication-WebAPI")]
+    [EventSource(Name = "Microsoft-OnboardingApplication-WebAPI")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();

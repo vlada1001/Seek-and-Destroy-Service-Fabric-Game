@@ -58,6 +58,76 @@
         }
       }
     },
+    "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\GameConsole\\GameConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\GameConsole\\GameConsole.csproj",
+        "projectName": "GameConsole",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\GameConsole\\GameConsole.csproj",
+        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\GameConsole\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\WebAPI\\WebAPI.csproj": {
+                "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\WebAPI\\WebAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Diagnostics.Tracing": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.9, 5.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection.Model\\PlayerCollection.Model.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -214,6 +284,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\GameConsole\\GameConsole.csproj": {
+                "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\GameConsole\\GameConsole.csproj"
+              },
               "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserActorService.Interfaces\\UserActor.Interfaces.csproj": {
                 "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserActorService.Interfaces\\UserActor.Interfaces.csproj"
               },
@@ -333,7 +406,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.2.2, )"
             }
           },
           "imports": [

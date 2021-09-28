@@ -75,16 +75,28 @@ namespace PlayerCollection.Model
         public Player Move()
         {
             Random random = new Random();
+            double teleportProb = random.NextDouble();
+
+            if (teleportProb >= 0.9)
+            {
+                _coordinates.X = random.Next(-100, 100);
+                _coordinates.Y = random.Next(-100, 100);
+                return this;
+            }
+
             if (State.Equals(Status.Exploring))
             {
-                if (random.Next() % 2 == 0 && Coordinates.X + 10 <= 100)
-                    _coordinates.X += 10;
-                else if (random.Next() % 2 == 0 && _coordinates.X - 10 >= -100)
-                    _coordinates.X -= 10;
-                if (random.Next() % 2 == 0 && _coordinates.Y + 10 <= 100)
-                    _coordinates.Y += 10;
-                else if (random.Next() % 2 == 0 && _coordinates.Y - 10 >= -100)
-                    _coordinates.Y -= 10;
+                int xJumpLength = random.Next(5, 20);
+                int yJumpLength = random.Next(5, 20);
+
+                if (random.Next() % 2 == 0 && Coordinates.X + xJumpLength <= 100)
+                    _coordinates.X += xJumpLength;
+                else if (random.Next() % 2 == 0 && _coordinates.X - xJumpLength >= -100)
+                    _coordinates.X -= xJumpLength;
+                if (random.Next() % 2 == 0 && _coordinates.Y + yJumpLength <= 100)
+                    _coordinates.Y += yJumpLength;
+                else if (random.Next() % 2 == 0 && _coordinates.Y - yJumpLength >= -100)
+                    _coordinates.Y -= yJumpLength;
             }
 
             return this;
@@ -92,7 +104,7 @@ namespace PlayerCollection.Model
 
         public Player FightPlayer(Player opponent)
         {
-            this.Opponent = opponent;
+            Opponent = opponent;
             return this;
         }
 
