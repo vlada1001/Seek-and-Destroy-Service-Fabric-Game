@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Common
 {
@@ -29,6 +31,7 @@ namespace Common
             Exploring,
             Unknown
         }
+
         public static long RandomLong()
         {
             Random random = new Random();
@@ -40,6 +43,18 @@ namespace Common
         public static double Distance(int x1, int x2, int y1, int y2)
         {
             return Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        }
+
+        public static long GetPartitionKey(Guid key)
+        {
+            byte[] hash;
+            using (MD5 md5 = MD5.Create())
+            {
+                md5.Initialize();
+                md5.ComputeHash(Encoding.UTF8.GetBytes(key.ToString()));
+                hash = md5.Hash;
+            }
+            return BitConverter.ToInt64(hash);
         }
     }
 }

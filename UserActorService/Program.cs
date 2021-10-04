@@ -27,7 +27,7 @@ namespace UserActor
                         new ActorServiceSettings()
                         {
                             ActorGarbageCollectionSettings =
-                                new ActorGarbageCollectionSettings(30, 1)
+                                new ActorGarbageCollectionSettings(60, 2)
                         })).GetAwaiter().GetResult();
 
                 Thread.Sleep(Timeout.Infinite);

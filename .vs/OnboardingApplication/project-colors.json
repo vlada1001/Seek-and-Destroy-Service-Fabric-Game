@@ -55,7 +55,12 @@
       "ProjectGuid": "b69a35fc-0af0-44b5-bb1a-560f2106178d",
       "DisplayName": "GameConsole",
       "ColorIndex": 9
+    },
+    "29c1e4e5-cc60-4445-8f83-b06fdc7d8c7e": {
+      "ProjectGuid": "29c1e4e5-cc60-4445-8f83-b06fdc7d8c7e",
+      "DisplayName": "GameConsole",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }

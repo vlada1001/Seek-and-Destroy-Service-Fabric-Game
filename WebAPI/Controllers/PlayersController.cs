@@ -73,14 +73,13 @@ namespace WebAPI.Controllers
         public async Task DeletePlayerAsync([FromRoute] Guid playerId)
         {
             IUserActor actor = GetActor(playerId);
-            await actor.DeletePlayerAsync();
 
-            //IActorService userActorServiceProxy = ActorServiceProxy.Create(
-            //    new Uri("fabric:/OnboardingApplication/UserActorService"),
-            //    actor.GetActorId());
+            IActorService userActorServiceProxy = ActorServiceProxy.Create(
+                new Uri("fabric:/OnboardingApplication/UserActorService"),
+                actor.GetActorId());
 
-            await actor.DeletePlayerAsync();
-            //await userActorServiceProxy.DeleteActorAsync(actor.GetActorId(), CancellationToken.None);
+            //await actor.DeletePlayerAsync();
+            await userActorServiceProxy.DeleteActorAsync(actor.GetActorId(), CancellationToken.None);
         }
 
         [HttpGet("movePlayer/{playerId}")]
@@ -98,7 +97,7 @@ namespace WebAPI.Controllers
 
             Parallel.ForEach(allPlayers, async p =>
             {
-                var actor = GetActor(Guid.Parse(p.Id));
+                IUserActor actor = GetActor(Guid.Parse(p.Id));
                 await actor.MovePlayerAsync();
             });
         }
@@ -126,8 +125,8 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("updatePlayer")]
-        public async Task<PlayerAPI> UpdatePlayerAsync([FromQuery] string playerId, [FromQuery] int hp, [FromQuery] int ad,
-            [FromQuery] int numberOfFights, [FromQuery] string state)
+        public async Task UpdatePlayerAsync([FromQuery] string playerId, [FromQuery] int hp, [FromQuery] int ad,
+            [FromQuery] int numberOfFights)
         {
             var player = new Player()
             {
@@ -135,17 +134,10 @@ namespace WebAPI.Controllers
                 HP = hp,
                 AD = ad,
                 NumberOfFights = numberOfFights,
-                State = Common.Library.StringToStatus(state)
             };
 
-            return new PlayerAPI
-            {
-                Id = playerId,
-                AD = hp,
-                HP = ad,
-                NumberOfFights = numberOfFights,
-                State = state
-            };
+            IUserActor actor = GetActor(player.Id);
+            await actor.UpdatePlayerAsync(player);
         }
 
         public static void CreateProxy()
@@ -153,9 +145,21 @@ namespace WebAPI.Controllers
             var proxyFactory = new ServiceProxyFactory(
                 c => new FabricTransportServiceRemotingClientFactory());
 
+            var key = Common.Library.RandomLong();
+
             _service = proxyFactory.CreateServiceProxy<IPlayerCollectionService>(
                 new Uri("fabric:/OnboardingApplication/PlayerCollection"),
-                new ServicePartitionKey(Common.Library.RandomLong()));
+                new ServicePartitionKey(key));
+        }
+
+        public static IPlayerCollectionService GetServiceProxy(long partitionKey)
+        {
+            var proxyFactory = new ServiceProxyFactory(
+                c => new FabricTransportServiceRemotingClientFactory());
+
+            return proxyFactory.CreateServiceProxy<IPlayerCollectionService>(
+                new Uri("fabric:/OnboardingApplication/PlayerCollection"),
+                new ServicePartitionKey(partitionKey));
         }
 
         public static IUserActor GetActor(Guid userId)

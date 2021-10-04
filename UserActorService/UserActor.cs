@@ -50,9 +50,22 @@ namespace UserActor
                 //ActorEventSource.Current.ActorMessage(this, $"[USER.MOVE]: {player.Username} moved to {player.Coordinates}.");
             }
         }
-        public Task UpdatePlayerAsync(Player player, CancellationToken cancellationToken = default)
+
+        public async Task UpdatePlayerAsync(Player player, CancellationToken cancellationToken = default)
         {
-            return Task.CompletedTask;
+            var p = await GetPlayerAsync(cancellationToken);
+
+            if (player != null && p != null && p.Id == player.Id)
+            {
+                player = await StateManager.AddOrUpdateStateAsync<Player>(
+                    "player",
+                    null,
+                    (key, value) => value.UpdatePlayer(player.HP, player.AD, player.NumberOfFights),
+                    cancellationToken);
+                PlayersController.CreateProxy();
+                await PlayersController._service.UpdatePlayerAsync(player, cancellationToken);
+                //ActorEventSource.Current.ActorMessage(this, $"[USER.MOVE]: {player.Username} moved to {player.Coordinates}.");
+            }
         }
 
         protected override Task OnActivateAsync()
@@ -62,11 +75,14 @@ namespace UserActor
             return Task.CompletedTask;
         }
 
-        protected override Task OnDeactivateAsync()
+        protected override async Task OnDeactivateAsync()
         {
+            await StateManager.TryRemoveStateAsync("player");
+            PlayersController.CreateProxy();
+            await PlayersController._service.DeletePlayerAsync(Id.GetGuidId(), CancellationToken.None);
             GameConsoleEventSource.Current.Message($"[USER.DELETE]: {Id} logged out.");
             //ActorEventSource.Current.ActorMessage(this, $"[USER.DELETE]: {Id} logged out.");
-            return base.OnDeactivateAsync();
+            //return base.OnDeactivateAsync();
         }
     }
 }

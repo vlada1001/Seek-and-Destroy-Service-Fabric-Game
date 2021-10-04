@@ -405,10 +405,10 @@ C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\obj\x64\Debug
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\obj\x64\Debug\net5.0\win7-x64\ref\UserActor.dll
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\obj\x64\Debug\net5.0\win7-x64\UserActor.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\obj\x64\Debug\net5.0\win7-x64\UserActor.genruntimeconfig.cache
-C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\obj\x64\Debug\net5.0\win7-x64\UserActor.csproj.CopyComplete
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\bin\x64\Debug\net5.0\win7-x64\GameConsole.deps.json
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\bin\x64\Debug\net5.0\win7-x64\GameConsole.runtimeconfig.json
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\bin\x64\Debug\net5.0\win7-x64\GameConsole.runtimeconfig.dev.json
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\bin\x64\Debug\net5.0\win7-x64\GameConsole.exe
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\bin\x64\Debug\net5.0\win7-x64\GameConsole.dll
 C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\bin\x64\Debug\net5.0\win7-x64\GameConsole.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserActorService\obj\x64\Debug\net5.0\win7-x64\UserActor.csproj.CopyComplete

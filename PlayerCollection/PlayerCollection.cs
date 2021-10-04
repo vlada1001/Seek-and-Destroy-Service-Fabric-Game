@@ -77,18 +77,6 @@ namespace PlayerCollection
         {
             if (_playerRepository == null)
                 _playerRepository = new SFPlayerRepository(StateManager);
-
-            /*var player1 = new Player().Init();
-            var player2 = new Player().Init();
-            var player3 = new Player().Init();
-            var player4 = new Player().Init();
-            var player5 = new Player().Init();
-
-            await _playerRepository.AddPlayerAsync(player1);
-            await _playerRepository.AddPlayerAsync(player2);
-            await _playerRepository.AddPlayerAsync(player3);
-            await _playerRepository.AddPlayerAsync(player4);
-            await _playerRepository.AddPlayerAsync(player5);*/
         }
     }
 }

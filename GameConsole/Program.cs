@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using WebAPI.Controllers;
 using WebAPI.Models;
 using static Common.Library;
 
@@ -22,7 +21,7 @@ namespace GameConsole
 
         static async Task RunAsync(HttpClient client, CancellationToken cancellationToken)
         {
-            while (true)
+            while (!cancellationToken.IsCancellationRequested)
             {
                 Random rand = new Random();
                 cancellationToken.ThrowIfCancellationRequested();
@@ -82,9 +81,19 @@ namespace GameConsole
                                                 else
                                                     GameConsoleEventSource.Current.Message($"[GAME]: {p1.Username} defeated {p2.Username}!");
 
+                                                p1.HP += rand.Next(1, 20);
+                                                p1.AD += rand.Next(1, 10);
+                                                p1.NumberOfFights += 1;
                                                 removedPlayers.Add(p2);
                                                 DeletePlayer(client, Guid.Parse(p2.Id), cancellationToken);
                                                 GameConsoleEventSource.Current.Message($"[USER.DELETE]: {p2.Id} logged out.");
+                                                UpdatePlayer(
+                                                    Guid.Parse(p1.Id),
+                                                    p1.HP,
+                                                    p1.AD,
+                                                    p1.NumberOfFights,
+                                                    client,
+                                                    cancellationToken);
                                             }
                                             else // player2 wins
                                             {
@@ -93,9 +102,19 @@ namespace GameConsole
                                                 else
                                                     GameConsoleEventSource.Current.Message($"[GAME]: {p2.Username} defeated {p1.Username}!");
 
+                                                p2.HP += rand.Next(1, 20);
+                                                p2.AD += rand.Next(1, 10);
+                                                p2.NumberOfFights += 1;
                                                 removedPlayers.Add(p1);
                                                 DeletePlayer(client, Guid.Parse(p1.Id), cancellationToken);
                                                 GameConsoleEventSource.Current.Message($"[USER.DELETE]: {p1.Id} logged out.");
+                                                UpdatePlayer(
+                                                    Guid.Parse(p2.Id),
+                                                    p2.HP,
+                                                    p2.AD,
+                                                    p2.NumberOfFights,
+                                                    client,
+                                                    cancellationToken);
                                             }
                                         }
                                         else
@@ -140,6 +159,13 @@ namespace GameConsole
         static async Task<HttpResponseMessage> CreatePlayer(HttpClient client, CancellationToken cancellationToken = default)
         {
             return await client.PutAsync($"createPlayer", null, cancellationToken);
+        }
+
+        static async Task<HttpResponseMessage> UpdatePlayer(Guid playerId, int hp, int ad, int numberOfFights,
+            HttpClient client, CancellationToken cancellationToken = default)
+        {
+            string request = $"updatePlayer?playerId={playerId}&hp={hp}&ad={ad}&numberOfFights={numberOfFights}";
+            return await client.GetAsync(request, cancellationToken);
         }
     }
 }

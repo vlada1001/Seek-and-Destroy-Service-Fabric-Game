@@ -13,7 +13,6 @@ namespace PlayerCollection.Model
         private int _ad;
         private int _numberOfFights;
         private Status _state;
-        private Player _opponent;
 
         public Guid Id
         {
@@ -57,20 +56,16 @@ namespace PlayerCollection.Model
             set => _state = value;
         }
 
-        public Player Opponent
-        {
-            get => _opponent;
-            set
-            {
-                _opponent = value;
-                if (value != null)
-                    _state = Status.InFight;
-                else
-                    _state = Status.Exploring;
-            }
-        }
-
         public bool CanFight => _state == Status.Exploring;
+
+        public Player UpdatePlayer(int hp, int ad, int numberOfFights)
+        {
+            HP = hp;
+            AD = ad;
+            NumberOfFights = numberOfFights;
+
+            return this;
+        }
 
         public Player Move()
         {
@@ -99,12 +94,6 @@ namespace PlayerCollection.Model
                     _coordinates.Y -= yJumpLength;
             }
 
-            return this;
-        }
-
-        public Player FightPlayer(Player opponent)
-        {
-            Opponent = opponent;
             return this;
         }
 

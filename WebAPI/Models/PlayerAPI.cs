@@ -25,8 +25,5 @@ namespace WebAPI.Models
 
         [JsonProperty("state")]
         public string State { get; set; }
-
-        [JsonProperty("opponent")]
-        public string Opponent { get; set; }
     }
 }

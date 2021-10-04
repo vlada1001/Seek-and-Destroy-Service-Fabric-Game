@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceManifest Name="WebAPIPkg" Version="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ManifestId="2009e0ce-7255-4c7f-b5c5-da490663394c">
+<ServiceManifest Name="WebAPIPkg" Version="2.0.5" xmlns="http://schemas.microsoft.com/2011/01/fabric" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ManifestId="2009e0ce-7255-4c7f-b5c5-da490663394c">
   <ServiceTypes>
     <!-- This is the name of your ServiceType. 
          This name must match the string used in RegisterServiceType call in Program.cs. -->
     <StatelessServiceType ServiceTypeName="WebAPIType" />
   </ServiceTypes>
   <!-- Code package is your service executable. -->
-  <CodePackage Name="Code" Version="1.0.0">
+  <CodePackage Name="Code" Version="2.0.5">
     <EntryPoint>
       <ExeHost>
         <Program>WebAPI.exe</Program>
