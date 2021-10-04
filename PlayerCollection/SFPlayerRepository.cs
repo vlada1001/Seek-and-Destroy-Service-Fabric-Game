@@ -110,16 +110,5 @@ namespace PlayerCollection
 
             await tx.CommitAsync();
         }
-
-        public async Task<int> GetActivePlayerCount(CancellationToken cancellationToken = default)
-        {
-            IReliableDictionary<Guid, Player> players = await stateManager.GetOrAddAsync<IReliableDictionary<Guid, Player>>("players");
-
-            using ITransaction tx = stateManager.CreateTransaction();
-
-            int count = (int)await players.GetCountAsync(tx);
-
-            return count;
-        }
     }
 }

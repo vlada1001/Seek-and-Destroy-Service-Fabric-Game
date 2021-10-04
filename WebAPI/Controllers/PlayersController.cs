@@ -1,18 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.ServiceFabric.Actors;
-using Microsoft.ServiceFabric.Actors.Client;
-using Microsoft.ServiceFabric.Services.Client;
+﻿using Common.API;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
-using Microsoft.ServiceFabric.Services.Remoting.V2.FabricTransport.Client;
 using PlayerCollection.Model;
-using PlayerOrchestrator.Interfaces;
+using UserOrchestrator.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 using System.Threading.Tasks;
-using UserActor.Interfaces;
-using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
@@ -20,119 +13,50 @@ namespace WebAPI.Controllers
     [Route("api/[controller]")]
     public class PlayersController : ControllerBase
     {
-        public static IPlayerCollectionService _service;
-
         public PlayersController()
         {
-            var proxyFactory = new ServiceProxyFactory(
-                c => new FabricTransportServiceRemotingClientFactory());
-
-            _service = proxyFactory.CreateServiceProxy<IPlayerCollectionService>(
-                new Uri("fabric:/OnboardingApplication/PlayerCollection"),
-                new ServicePartitionKey(0L));
         }
 
         [HttpGet]
         public async Task<IEnumerable<PlayerAPI>> GetPlayersAsync()
         {
-            //IEnumerable<Player> allPlayers = await _service.GetAllPlayersAsync();
-            List<Player> allPlayers = new List<Player>();
-
-            List<Int64> partitionsLowKey = await _service.GetPartitionsLowKey();
-
-            foreach (Int64 key in partitionsLowKey)
-            {
-                var proxy = GetPlayerServiceProxy(key);
-                var players = await proxy.GetAllPlayersAsync();
-                allPlayers.AddRange(players);
-            }
-
-            return allPlayers.Select(p => new PlayerAPI()
-            {
-                Id = p.Id.ToString(),
-                Username = p.Username,
-                HP = p.HP,
-                AD = p.AD,
-                State = Common.Library.StatusToString(p.State),
-                NumberOfFights = p.NumberOfFights,
-                Coordinates = new CoordAPI() { X = p.Coordinates.X, Y = p.Coordinates.Y }
-            });
+            return await GetUserOrchestratorServiceProxy().GetPlayersAsync();
         }
 
         [HttpPut("createPlayer")]
         public async Task CreatePlayer()
         {
-            Player player = new Player().Init();
-            IUserActor actor = GetActor(player.Id);
-
-            await actor.AddPlayerAsync(player);
+            await GetUserOrchestratorServiceProxy().CreatePlayerAsync();
         }
 
         [HttpPut("createPlayers")]
         public async Task CreatePlayers([FromQuery] int count)
         {
-            if (count > 0)
-            {
-                for (int i = 0; i < count; i++)
-                {
-                    CreatePlayer();
-                }
-            }
+            await GetUserOrchestratorServiceProxy().CreatePlayersAsync(count);
         }
 
         [HttpDelete("deletePlayer/{playerId}")]
         public async Task DeletePlayerAsync([FromRoute] Guid playerId)
         {
-            IUserActor actor = GetActor(playerId);
-
-            IActorService userActorServiceProxy = ActorServiceProxy.Create(
-                new Uri("fabric:/OnboardingApplication/UserActorService"),
-                actor.GetActorId());
-
-            //await actor.DeletePlayerAsync();
-            await userActorServiceProxy.DeleteActorAsync(actor.GetActorId(), CancellationToken.None);
+            await GetUserOrchestratorServiceProxy().DeletePlayerAsync(playerId);
         }
 
         [HttpGet("movePlayer/{playerId}")]
         public async Task MovePlayerAsync([FromRoute] Guid playerId)
         {
-            IUserActor actor = GetActor(playerId);
-
-            await actor.MovePlayerAsync();
+            await GetUserOrchestratorServiceProxy().MovePlayerAsync(playerId);
         }
 
         [HttpGet("movePlayers")]
         public async Task MovePlayersAsync()
         {
-            var allPlayers = await GetPlayersAsync();
-
-            Parallel.ForEach(allPlayers, async p =>
-            {
-                IUserActor actor = GetActor(Guid.Parse(p.Id));
-                await actor.MovePlayerAsync();
-            });
+            await GetUserOrchestratorServiceProxy().MovePlayersAsync();
         }
 
         [HttpGet("{playerId}")]
         public async Task<PlayerAPI> GetPlayerAsync(Guid playerId)
         {
-            IUserActor actor = GetActor(playerId);
-            var p = await actor.GetPlayerAsync();
-
-            if (p == null) return null;
-
-            var playersApi = new PlayerAPI()
-            {
-                Id = p.Id.ToString(),
-                Username = p.Username,
-                HP = p.HP,
-                AD = p.AD,
-                State = Common.Library.StatusToString(p.State),
-                NumberOfFights = p.NumberOfFights,
-                Coordinates = new CoordAPI() { X = p.Coordinates.X, Y = p.Coordinates.Y }
-            };
-
-            return playersApi;
+            return await GetUserOrchestratorServiceProxy().GetPlayerAsync(playerId);
         }
 
         [HttpGet("updatePlayer")]
@@ -147,30 +71,18 @@ namespace WebAPI.Controllers
                 NumberOfFights = numberOfFights,
             };
 
-            IUserActor actor = GetActor(player.Id);
-            await actor.UpdatePlayerAsync(player);
+            await GetUserOrchestratorServiceProxy().UpdatePlayerAsync(player);
         }
 
-        public static IPlayerCollectionService GetPlayerServiceProxy(long partitionKey)
+        [HttpGet("activePlayersCount")]
+        public async Task<Int64> GetActivePlayersCountAsync()
         {
-            var proxyFactory = new ServiceProxyFactory(
-                c => new FabricTransportServiceRemotingClientFactory());
-
-            return proxyFactory.CreateServiceProxy<IPlayerCollectionService>(
-                new Uri("fabric:/OnboardingApplication/PlayerCollection"),
-                new ServicePartitionKey(partitionKey));
+            return await GetUserOrchestratorServiceProxy().GetActivePlayersCountAsync();
         }
 
-        public static IPlayerOrchestrator GetPlayerOrchestratorServiceProxy()
+        public static IUserOrchestrator GetUserOrchestratorServiceProxy()
         {
-            return ServiceProxy.Create<IPlayerOrchestrator>(new Uri("fabric:/OnboardingApplication/PlayerOrchestrator"));
-        }
-
-        public static IUserActor GetActor(Guid userId)
-        {
-            return ActorProxy.Create<IUserActor>(
-                new ActorId(userId),
-                new Uri("fabric:/OnboardingApplication/UserActorService"));
+            return ServiceProxy.Create<IUserOrchestrator>(new Uri("fabric:/OnboardingApplication/UserOrchestrator"));
         }
     }
 }

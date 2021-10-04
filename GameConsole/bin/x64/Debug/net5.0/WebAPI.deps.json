@@ -39,6 +39,7 @@
           "PlayerCollection.Model": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.2",
           "UserActor.Interfaces": "1.0.0",
+          "UserOrchestrator.Interfaces": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -2884,6 +2885,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
         "compile": {
           "Common.dll": {}
         }
@@ -2915,6 +2919,16 @@
         "compile": {
           "UserActor.Interfaces.dll": {}
         }
+      },
+      "UserOrchestrator.Interfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329",
+          "PlayerCollection.Model": "1.0.0"
+        },
+        "compile": {
+          "UserOrchestrator.Interfaces.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v5.0/win7-x64": {
@@ -2926,6 +2940,7 @@
           "PlayerCollection.Model": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.2",
           "UserActor.Interfaces": "1.0.0",
+          "UserOrchestrator.Interfaces": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -5799,6 +5814,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
         "runtime": {
           "Common.dll": {}
         }
@@ -5829,6 +5847,16 @@
         },
         "runtime": {
           "UserActor.Interfaces.dll": {}
+        }
+      },
+      "UserOrchestrator.Interfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329",
+          "PlayerCollection.Model": "1.0.0"
+        },
+        "runtime": {
+          "UserOrchestrator.Interfaces.dll": {}
         }
       }
     }
@@ -6810,6 +6838,11 @@
       "sha512": ""
     },
     "UserActor.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UserOrchestrator.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

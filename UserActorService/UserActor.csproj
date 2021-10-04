@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
@@ -22,8 +22,8 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\GameConsole\GameConsole.csproj" />
+		<ProjectReference Include="..\UserOrchestrator\UserOrchestrator.csproj" />
 		<ProjectReference Include="..\UserActorService.Interfaces\UserActor.Interfaces.csproj" />
-		<ProjectReference Include="..\WebAPI\WebAPI.csproj" />
 	</ItemGroup>
 
 </Project>

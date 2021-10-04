@@ -1,0 +1,17 @@
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\UserOrchestrator.Interfaces.deps.json
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\UserOrchestrator.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\ref\UserOrchestrator.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\UserOrchestrator.Interfaces.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\Common.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\PlayerCollection.Model.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\PlayerCollection.Model.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\bin\Debug\net5.0\Common.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.csproj.AssemblyReference.cache
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.AssemblyInfoInputs.cache
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.AssemblyInfo.cs
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.csproj.CopyComplete
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\ref\UserOrchestrator.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\UserOrchestrator.Interfaces\obj\Debug\net5.0\UserOrchestrator.Interfaces.pdb

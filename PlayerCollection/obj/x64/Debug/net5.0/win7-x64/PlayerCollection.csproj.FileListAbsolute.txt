@@ -1,3 +1,8 @@
+C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.csproj.AssemblyReference.cache
+C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.AssemblyInfoInputs.cache
+C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.AssemblyInfo.cs
+C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.csproj.CoreCompileInputs.cache
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\PlayerCollection.exe
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\PlayerCollection.deps.json
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\PlayerCollection.runtimeconfig.json
@@ -21,6 +26,7 @@ C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\Microsoft.ServiceFabric.FabricTransport.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\Microsoft.ServiceFabric.Services.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\Microsoft.ServiceFabric.Services.Remoting.dll
+C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\Newtonsoft.Json.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\de-DE\Faker.Net.5.0.resources.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\Microsoft.CSharp.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\Microsoft.VisualBasic.Core.dll
@@ -245,11 +251,6 @@ C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\PlayerCollection.Model.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\PlayerCollection.Model.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\bin\x64\Debug\net5.0\win7-x64\Common.pdb
-C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.csproj.AssemblyReference.cache
-C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.AssemblyInfoInputs.cache
-C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.AssemblyInfo.cs
-C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.csproj.CoreCompileInputs.cache
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\ref\PlayerCollection.dll
 C:\Users\vlada\source\repos\OnboardingApplication\PlayerCollection\obj\x64\Debug\net5.0\win7-x64\PlayerCollection.pdb

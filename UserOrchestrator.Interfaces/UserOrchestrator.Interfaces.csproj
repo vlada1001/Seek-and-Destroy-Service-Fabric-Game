@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ServiceFabric.Services" Version="5.1.329" />
+    <PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="5.1.329" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlayerCollection.Model\PlayerCollection.Model.csproj" />
+  </ItemGroup>
+
+</Project>

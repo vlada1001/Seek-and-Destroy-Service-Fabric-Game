@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -213,70 +219,6 @@
         }
       }
     },
-    "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\PlayerOrchestrator.Interfaces.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\PlayerOrchestrator.Interfaces.csproj",
-        "projectName": "PlayerOrchestrator.Interfaces",
-        "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\PlayerOrchestrator.Interfaces.csproj",
-        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.ServiceFabric.Services": {
-              "target": "Package",
-              "version": "[5.1.329, )"
-            },
-            "Microsoft.ServiceFabric.Services.Remoting": {
-              "target": "Package",
-              "version": "[5.1.329, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserActorService.Interfaces\\UserActor.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -341,6 +283,74 @@
         }
       }
     },
+    "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserOrchestrator.Interfaces\\UserOrchestrator.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserOrchestrator.Interfaces\\UserOrchestrator.Interfaces.csproj",
+        "projectName": "UserOrchestrator.Interfaces",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserOrchestrator.Interfaces\\UserOrchestrator.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserOrchestrator.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection.Model\\PlayerCollection.Model.csproj": {
+                "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection.Model\\PlayerCollection.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.ServiceFabric.Services": {
+              "target": "Package",
+              "version": "[5.1.329, )"
+            },
+            "Microsoft.ServiceFabric.Services.Remoting": {
+              "target": "Package",
+              "version": "[5.1.329, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -371,11 +381,11 @@
               "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection\\PlayerCollection.csproj": {
                 "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection\\PlayerCollection.csproj"
               },
-              "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\PlayerOrchestrator.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\PlayerOrchestrator.Interfaces.csproj"
-              },
               "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserActorService.Interfaces\\UserActor.Interfaces.csproj": {
                 "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserActorService.Interfaces\\UserActor.Interfaces.csproj"
+              },
+              "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserOrchestrator.Interfaces\\UserOrchestrator.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserOrchestrator.Interfaces\\UserOrchestrator.Interfaces.csproj"
               }
             }
           }

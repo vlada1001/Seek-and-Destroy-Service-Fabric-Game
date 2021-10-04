@@ -389,7 +389,9 @@ C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.Model.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\UserActor.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\UserOrchestrator.Interfaces.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.Model.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\UserOrchestrator.Interfaces.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\UserActor.Interfaces.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\Common.pdb

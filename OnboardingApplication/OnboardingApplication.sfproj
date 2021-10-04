@@ -30,7 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PlayerCollection\PlayerCollection.csproj" />
-    <ProjectReference Include="..\PlayerOrchestrator\PlayerOrchestrator.csproj" />
+    <ProjectReference Include="..\UserOrchestrator\UserOrchestrator.csproj" />
     <ProjectReference Include="..\UserActorService\UserActor.csproj" />
     <ProjectReference Include="..\WebAPI\WebAPI.csproj">
       <ServiceLaunchUrl>http://localhost:{ServicePort}/swagger</ServiceLaunchUrl>

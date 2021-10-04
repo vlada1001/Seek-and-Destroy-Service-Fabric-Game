@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4v4jtz56+VGsGvkZA4v8XrpSCyBaxJ6P1E/b4CtXxCXU3EEeTt5Td6O/LKTj3tlVRr9+bH5hhNY0baAhHwy3zA==",
+  "dgSpecHash": "Xfl5H666uK7SwB4xbaT/3E9mkHvP7ZCdQx+47l5v8p3y5B/J4Aw0JMUnAbAVEgZ552EPDcXg6BDTJbIE3bC8BA==",
   "success": true,
   "projectFilePath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\Common\\Common.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vlada\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1967,6 +1967,9 @@
       "Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
         "compile": {
           "bin/placeholder/Common.dll": {}
         },
@@ -2003,20 +2006,6 @@
           "bin/placeholder/PlayerCollection.Model.dll": {}
         }
       },
-      "PlayerOrchestrator.Interfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Microsoft.ServiceFabric.Services": "5.1.329",
-          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329"
-        },
-        "compile": {
-          "bin/placeholder/PlayerOrchestrator.Interfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PlayerOrchestrator.Interfaces.dll": {}
-        }
-      },
       "UserActor.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2031,6 +2020,21 @@
           "bin/placeholder/UserActor.Interfaces.dll": {}
         }
       },
+      "UserOrchestrator.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329",
+          "PlayerCollection.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UserOrchestrator.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserOrchestrator.Interfaces.dll": {}
+        }
+      },
       "WebAPI/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2039,9 +2043,9 @@
           "Newtonsoft.Json": "13.0.1",
           "PlayerCollection": "1.0.0",
           "PlayerCollection.Model": "1.0.0",
-          "PlayerOrchestrator.Interfaces": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.2",
-          "UserActor.Interfaces": "1.0.0"
+          "UserActor.Interfaces": "1.0.0",
+          "UserOrchestrator.Interfaces": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WebAPI.dll": {}
@@ -6324,15 +6328,15 @@
       "path": "../PlayerCollection.Model/PlayerCollection.Model.csproj",
       "msbuildProject": "../PlayerCollection.Model/PlayerCollection.Model.csproj"
     },
-    "PlayerOrchestrator.Interfaces/1.0.0": {
-      "type": "project",
-      "path": "../PlayerOrchestrator.Interfaces/PlayerOrchestrator.Interfaces.csproj",
-      "msbuildProject": "../PlayerOrchestrator.Interfaces/PlayerOrchestrator.Interfaces.csproj"
-    },
     "UserActor.Interfaces/1.0.0": {
       "type": "project",
       "path": "../UserActorService.Interfaces/UserActor.Interfaces.csproj",
       "msbuildProject": "../UserActorService.Interfaces/UserActor.Interfaces.csproj"
+    },
+    "UserOrchestrator.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../UserOrchestrator.Interfaces/UserOrchestrator.Interfaces.csproj",
+      "msbuildProject": "../UserOrchestrator.Interfaces/UserOrchestrator.Interfaces.csproj"
     },
     "WebAPI/1.0.0": {
       "type": "project",

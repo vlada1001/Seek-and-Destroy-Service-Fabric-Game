@@ -12,7 +12,7 @@
           "GameConsole": "1.0.0",
           "Microsoft.ServiceFabric.Actors": "5.1.329",
           "UserActor.Interfaces": "1.0.0",
-          "WebAPI": "1.0.0",
+          "UserOrchestrator": "1.0.0",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "5.0.0",
           "runtimepack.Microsoft.AspNetCore.App.Runtime.win-x64": "5.0.0"
         },
@@ -2605,6 +2605,9 @@
         }
       },
       "Common/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
         "runtime": {
           "Common.dll": {}
         }
@@ -2646,6 +2649,29 @@
           "UserActor.Interfaces.dll": {}
         }
       },
+      "UserOrchestrator/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Actors": "5.1.329",
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329",
+          "PlayerCollection.Model": "1.0.0",
+          "UserActor.Interfaces": "1.0.0",
+          "UserOrchestrator.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "UserOrchestrator.dll": {}
+        }
+      },
+      "UserOrchestrator.Interfaces/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329",
+          "PlayerCollection.Model": "1.0.0"
+        },
+        "runtime": {
+          "UserOrchestrator.Interfaces.dll": {}
+        }
+      },
       "WebAPI/1.0.0": {
         "dependencies": {
           "Microsoft.ServiceFabric.AspNetCore.Kestrel": "5.1.329",
@@ -2653,7 +2679,8 @@
           "PlayerCollection": "1.0.0",
           "PlayerCollection.Model": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.2",
-          "UserActor.Interfaces": "1.0.0"
+          "UserActor.Interfaces": "1.0.0",
+          "UserOrchestrator.Interfaces": "1.0.0"
         },
         "runtime": {
           "WebAPI.dll": {}
@@ -3643,6 +3670,16 @@
       "sha512": ""
     },
     "UserActor.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UserOrchestrator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UserOrchestrator.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
@@ -19,7 +19,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\PlayerCollection.Model\PlayerCollection.Model.csproj" />
 		<ProjectReference Include="..\PlayerCollection\PlayerCollection.csproj" />
-		<ProjectReference Include="..\PlayerOrchestrator.Interfaces\PlayerOrchestrator.Interfaces.csproj" />
+		<ProjectReference Include="..\UserOrchestrator.Interfaces\UserOrchestrator.Interfaces.csproj" />
 		<ProjectReference Include="..\UserActorService.Interfaces\UserActor.Interfaces.csproj" />
 	</ItemGroup>
 

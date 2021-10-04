@@ -2,6 +2,7 @@ C:\Users\vlada\source\repos\OnboardingApplication\Common\bin\Debug\net5.0\Common
 C:\Users\vlada\source\repos\OnboardingApplication\Common\bin\Debug\net5.0\Common.dll
 C:\Users\vlada\source\repos\OnboardingApplication\Common\bin\Debug\net5.0\ref\Common.dll
 C:\Users\vlada\source\repos\OnboardingApplication\Common\bin\Debug\net5.0\Common.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache
 C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
 C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
@@ -9,4 +10,3 @@ C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common
 C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common.dll
 C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\ref\Common.dll
 C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common.pdb
-C:\Users\vlada\source\repos\OnboardingApplication\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache

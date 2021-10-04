@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/OnboardingApplication" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
-    <Parameter Name="PlayerOrchestrator_InstanceCount" Value="1" />
+    <Parameter Name="UserOrchestrator_InstanceCount" Value="1" />
     <Parameter Name="WebAPI_ASPNETCORE_ENVIRONMENT" Value="Development" />
     <Parameter Name="WebAPI_InstanceCount" Value="1" />
     <Parameter Name="UserActorService_PartitionCount" Value="1" />

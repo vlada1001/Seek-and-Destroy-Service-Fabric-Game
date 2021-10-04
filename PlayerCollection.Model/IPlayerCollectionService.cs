@@ -15,10 +15,6 @@ namespace PlayerCollection.Model
         Task MovePlayersAsync(CancellationToken cancellationToken = default);
         Task<Player> GetPlayerAsync(Guid playerId, CancellationToken cancellationToken = default);
         Task UpdatePlayerAsync(Player player, CancellationToken cancellationToken = default);
-
         Task<List<Int64>> GetPartitionsLowKey(CancellationToken cancellationToken = default);
-
-        Task<int> GetPartitionCount(CancellationToken cancellationToken = default);
-        Task<int> GetActivePlayerCount(CancellationToken cancellationToken = default);
     }
 }

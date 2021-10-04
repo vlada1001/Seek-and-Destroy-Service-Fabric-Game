@@ -1,6 +1,7 @@
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\PlayerCollection.exe
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.exe
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.exe
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserOrchestrator.exe
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.exe
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.deps.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.runtimeconfig.json
@@ -10,6 +11,8 @@ C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debu
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\PlayerCollection.runtimeconfig.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\appsettings.Development.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\appsettings.json
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserOrchestrator.deps.json
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserOrchestrator.runtimeconfig.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.deps.json
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.runtimeconfig.json
@@ -396,10 +399,14 @@ C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debu
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\PlayerCollection.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\PlayerCollection.Model.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.Interfaces.dll
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserOrchestrator.dll
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserOrchestrator.Interfaces.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\GameConsole.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserOrchestrator.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserActor.Interfaces.pdb
-C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\Common.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\PlayerCollection.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\PlayerCollection.Model.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\UserOrchestrator.Interfaces.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\UserActorPkg\Code\WebAPI.pdb

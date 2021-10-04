@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="OnboardingApplicationType" ApplicationTypeVersion="3.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric" ManifestId="e9a8a065-2e86-4b77-8d0c-03cf29913f6f">
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="OnboardingApplicationType" ApplicationTypeVersion="3.0.1" xmlns="http://schemas.microsoft.com/2011/01/fabric" ManifestId="e9a8a065-2e86-4b77-8d0c-03cf29913f6f">
   <Parameters>
     <Parameter Name="WebAPI_ASPNETCORE_ENVIRONMENT" DefaultValue="" />
     <Parameter Name="WebAPI_InstanceCount" DefaultValue="-1" />
+    <Parameter Name="UserOrchestrator_InstanceCount" DefaultValue="-1" />
     <Parameter Name="UserActorService_PartitionCount" DefaultValue="5" />
     <Parameter Name="UserActorService_MinReplicaSetSize" DefaultValue="3" />
     <Parameter Name="UserActorService_TargetReplicaSetSize" DefaultValue="3" />
@@ -14,11 +15,15 @@
        should match the Name and Version attributes of the ServiceManifest element defined in the 
        ServiceManifest.xml file. -->
   <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="UserOrchestratorPkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <ServiceManifestImport>
     <ServiceManifestRef ServiceManifestName="UserActorPkg" ServiceManifestVersion="3.0.0" />
     <ConfigOverrides />
   </ServiceManifestImport>
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="PlayerCollectionPkg" ServiceManifestVersion="3.0.0" />
+    <ServiceManifestRef ServiceManifestName="PlayerCollectionPkg" ServiceManifestVersion="3.0.1" />
     <ConfigOverrides />
   </ServiceManifestImport>
   <ServiceManifestImport>
@@ -39,6 +44,11 @@
         <SingletonPartition />
       </StatelessService>
     </Service>-->
+    <Service Name="UserOrchestrator" ServicePackageActivationMode="ExclusiveProcess">
+      <StatelessService ServiceTypeName="UserOrchestratorType" InstanceCount="[UserOrchestrator_InstanceCount]">
+        <SingletonPartition />
+      </StatelessService>
+    </Service>
     <Service Name="WebAPI" ServicePackageActivationMode="ExclusiveProcess">
       <StatelessService ServiceTypeName="WebAPIType" InstanceCount="[WebAPI_InstanceCount]">
         <SingletonPartition />

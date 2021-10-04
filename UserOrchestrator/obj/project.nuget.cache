@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "wUmF/IueRlQ/VsYJFy+VTsoSgq6GMBH93PXfB+kF778J7BIrBiPOHxXiuQw/EetwyRzPEIhX9TlqE9oCLDqFJQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserOrchestrator\\UserOrchestrator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vlada\\.nuget\\packages\\faker.net\\1.5.148\\faker.net.1.5.148.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric\\8.1.329\\microsoft.servicefabric.8.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.actors\\5.1.329\\microsoft.servicefabric.actors.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.data\\5.1.329\\microsoft.servicefabric.data.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.data.extensions\\5.1.329\\microsoft.servicefabric.data.extensions.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.data.interfaces\\5.1.329\\microsoft.servicefabric.data.interfaces.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.diagnostics.internal\\5.1.329\\microsoft.servicefabric.diagnostics.internal.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.fabrictransport.internal\\5.1.329\\microsoft.servicefabric.fabrictransport.internal.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.services\\5.1.329\\microsoft.servicefabric.services.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.servicefabric.services.remoting\\5.1.329\\microsoft.servicefabric.services.remoting.5.1.329.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.0\\microsoft.netcore.app.runtime.win-x64.5.0.0.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.0\\microsoft.aspnetcore.app.runtime.win-x64.5.0.0.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

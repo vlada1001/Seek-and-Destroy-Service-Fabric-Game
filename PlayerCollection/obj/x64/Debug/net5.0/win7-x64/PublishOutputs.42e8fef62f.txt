@@ -238,6 +238,7 @@ C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debu
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\PlayerCollectionPkg\Code\Microsoft.ServiceFabric.FabricTransport.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\PlayerCollectionPkg\Code\Microsoft.ServiceFabric.Services.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\PlayerCollectionPkg\Code\Microsoft.ServiceFabric.Services.Remoting.dll
+C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\PlayerCollectionPkg\Code\Newtonsoft.Json.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\PlayerCollectionPkg\Code\de-DE\Faker.Net.5.0.resources.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\PlayerCollectionPkg\Code\Common.dll
 C:\Users\vlada\source\repos\OnboardingApplication\OnboardingApplication\pkg\Debug\PlayerCollectionPkg\Code\PlayerCollection.Model.dll
