@@ -94,3 +94,10 @@ C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\obj\x64\Debug\net5
 C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\obj\x64\Debug\net5.0\ref\GameConsole.dll
 C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\obj\x64\Debug\net5.0\GameConsole.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\obj\x64\Debug\net5.0\GameConsole.genruntimeconfig.cache
+C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\bin\x64\Debug\net5.0\PlayerCollection.deps.json
+C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\bin\x64\Debug\net5.0\PlayerCollection.runtimeconfig.json
+C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\bin\x64\Debug\net5.0\PlayerCollection.runtimeconfig.dev.json
+C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\bin\x64\Debug\net5.0\PlayerCollection.exe
+C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\bin\x64\Debug\net5.0\PlayerCollection.dll
+C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\bin\x64\Debug\net5.0\PlayerCollection.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\GameConsole\obj\x64\Debug\net5.0\GameConsole.csproj.CopyComplete

@@ -5,6 +5,7 @@ using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Microsoft.ServiceFabric.Services.Remoting.V2.FabricTransport.Client;
 using PlayerCollection.Model;
+using PlayerOrchestrator.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,17 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<IEnumerable<PlayerAPI>> GetPlayersAsync()
         {
-            IEnumerable<Player> allPlayers = await _service.GetAllPlayersAsync();
+            //IEnumerable<Player> allPlayers = await _service.GetAllPlayersAsync();
+            List<Player> allPlayers = new List<Player>();
+
+            List<Int64> partitionsLowKey = await _service.GetPartitionsLowKey();
+
+            foreach (Int64 key in partitionsLowKey)
+            {
+                var proxy = GetPlayerServiceProxy(key);
+                var players = await proxy.GetAllPlayersAsync();
+                allPlayers.AddRange(players);
+            }
 
             return allPlayers.Select(p => new PlayerAPI()
             {
@@ -140,19 +151,7 @@ namespace WebAPI.Controllers
             await actor.UpdatePlayerAsync(player);
         }
 
-        public static void CreateProxy()
-        {
-            var proxyFactory = new ServiceProxyFactory(
-                c => new FabricTransportServiceRemotingClientFactory());
-
-            var key = Common.Library.RandomLong();
-
-            _service = proxyFactory.CreateServiceProxy<IPlayerCollectionService>(
-                new Uri("fabric:/OnboardingApplication/PlayerCollection"),
-                new ServicePartitionKey(key));
-        }
-
-        public static IPlayerCollectionService GetServiceProxy(long partitionKey)
+        public static IPlayerCollectionService GetPlayerServiceProxy(long partitionKey)
         {
             var proxyFactory = new ServiceProxyFactory(
                 c => new FabricTransportServiceRemotingClientFactory());
@@ -160,6 +159,11 @@ namespace WebAPI.Controllers
             return proxyFactory.CreateServiceProxy<IPlayerCollectionService>(
                 new Uri("fabric:/OnboardingApplication/PlayerCollection"),
                 new ServicePartitionKey(partitionKey));
+        }
+
+        public static IPlayerOrchestrator GetPlayerOrchestratorServiceProxy()
+        {
+            return ServiceProxy.Create<IPlayerOrchestrator>(new Uri("fabric:/OnboardingApplication/PlayerOrchestrator"));
         }
 
         public static IUserActor GetActor(Guid userId)

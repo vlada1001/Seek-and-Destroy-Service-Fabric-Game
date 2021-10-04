@@ -1976,6 +1976,20 @@
           "bin/placeholder/Common.dll": {}
         }
       },
+      "PlayerCollection/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "PlayerCollection.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PlayerCollection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PlayerCollection.dll": {}
+        }
+      },
       "PlayerCollection.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1989,6 +2003,20 @@
         },
         "runtime": {
           "bin/placeholder/PlayerCollection.Model.dll": {}
+        }
+      },
+      "PlayerOrchestrator.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329"
+        },
+        "compile": {
+          "bin/placeholder/PlayerOrchestrator.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PlayerOrchestrator.Interfaces.dll": {}
         }
       },
       "UserActor.Interfaces/1.0.0": {
@@ -4020,6 +4048,20 @@
           "bin/placeholder/Common.dll": {}
         }
       },
+      "PlayerCollection/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "PlayerCollection.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PlayerCollection.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PlayerCollection.dll": {}
+        }
+      },
       "PlayerCollection.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -4033,6 +4075,20 @@
         },
         "runtime": {
           "bin/placeholder/PlayerCollection.Model.dll": {}
+        }
+      },
+      "PlayerOrchestrator.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "Microsoft.ServiceFabric.Services.Remoting": "5.1.329"
+        },
+        "compile": {
+          "bin/placeholder/PlayerOrchestrator.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PlayerOrchestrator.Interfaces.dll": {}
         }
       },
       "UserActor.Interfaces/1.0.0": {
@@ -8867,10 +8923,20 @@
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
     },
+    "PlayerCollection/1.0.0": {
+      "type": "project",
+      "path": "../PlayerCollection/PlayerCollection.csproj",
+      "msbuildProject": "../PlayerCollection/PlayerCollection.csproj"
+    },
     "PlayerCollection.Model/1.0.0": {
       "type": "project",
       "path": "../PlayerCollection.Model/PlayerCollection.Model.csproj",
       "msbuildProject": "../PlayerCollection.Model/PlayerCollection.Model.csproj"
+    },
+    "PlayerOrchestrator.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../PlayerOrchestrator.Interfaces/PlayerOrchestrator.Interfaces.csproj",
+      "msbuildProject": "../PlayerOrchestrator.Interfaces/PlayerOrchestrator.Interfaces.csproj"
     },
     "UserActor.Interfaces/1.0.0": {
       "type": "project",
@@ -8882,7 +8948,9 @@
     "net5.0": [
       "Microsoft.ServiceFabric.AspNetCore.Kestrel >= 5.1.329",
       "Newtonsoft.Json >= 13.0.1",
+      "PlayerCollection >= 1.0.0",
       "PlayerCollection.Model >= 1.0.0",
+      "PlayerOrchestrator.Interfaces >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.2",
       "UserActor.Interfaces >= 1.0.0"
     ]
@@ -8916,6 +8984,12 @@
           "projectReferences": {
             "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection.Model\\PlayerCollection.Model.csproj": {
               "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection.Model\\PlayerCollection.Model.csproj"
+            },
+            "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection\\PlayerCollection.csproj": {
+              "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerCollection\\PlayerCollection.csproj"
+            },
+            "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\PlayerOrchestrator.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\PlayerOrchestrator.Interfaces\\PlayerOrchestrator.Interfaces.csproj"
             },
             "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserActorService.Interfaces\\UserActor.Interfaces.csproj": {
               "projectPath": "C:\\Users\\vlada\\source\\repos\\OnboardingApplication\\UserActorService.Interfaces\\UserActor.Interfaces.csproj"

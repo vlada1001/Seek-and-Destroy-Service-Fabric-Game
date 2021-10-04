@@ -21,7 +21,7 @@ namespace UserActor
         {
             await StateManager.TryAddStateAsync("player", player, cancellationToken);
 
-            var proxy = PlayersController.GetServiceProxy(GetPartitionKey(player.Id));
+            var proxy = PlayersController.GetPlayerServiceProxy(GetPartitionKey(Id.GetGuidId()));
 
             await proxy.AddPlayerAsync(player, cancellationToken);
         }
@@ -30,14 +30,14 @@ namespace UserActor
         {
             await StateManager.TryRemoveStateAsync("player", cancellationToken);
 
-            var proxy = PlayersController.GetServiceProxy(GetPartitionKey(Id.GetGuidId()));
+            var proxy = PlayersController.GetPlayerServiceProxy(GetPartitionKey(Id.GetGuidId()));
 
             await proxy.DeletePlayerAsync(Id.GetGuidId(), cancellationToken);
         }
 
         public async Task<Player> GetPlayerAsync(CancellationToken cancellationToken = default)
         {
-            var proxy = PlayersController.GetServiceProxy(GetPartitionKey(Id.GetGuidId()));
+            var proxy = PlayersController.GetPlayerServiceProxy(GetPartitionKey(Id.GetGuidId()));
             return await proxy.GetPlayerAsync(Id.GetGuidId(), cancellationToken);
         }
 
@@ -49,7 +49,7 @@ namespace UserActor
             {
                 player = await StateManager.AddOrUpdateStateAsync<Player>("player", null, (key, value) => value.Move(), cancellationToken);
 
-                var proxy = PlayersController.GetServiceProxy(GetPartitionKey(Id.GetGuidId()));
+                var proxy = PlayersController.GetPlayerServiceProxy(GetPartitionKey(Id.GetGuidId()));
 
                 await proxy.UpdatePlayerAsync(player, cancellationToken);
                 GameConsoleEventSource.Current.Message($"[USER.MOVE]: {player.Username} moved to {player.Coordinates}.");
@@ -69,7 +69,7 @@ namespace UserActor
                     (key, value) => value.UpdatePlayer(player.HP, player.AD, player.NumberOfFights),
                     cancellationToken);
 
-                var proxy = PlayersController.GetServiceProxy(GetPartitionKey(Id.GetGuidId()));
+                var proxy = PlayersController.GetPlayerServiceProxy(GetPartitionKey(Id.GetGuidId()));
 
                 await proxy.UpdatePlayerAsync(player, cancellationToken);
                 //ActorEventSource.Current.ActorMessage(this, $"[USER.MOVE]: {player.Username} moved to {player.Coordinates}.");
@@ -87,7 +87,7 @@ namespace UserActor
         {
             await StateManager.TryRemoveStateAsync("player");
 
-            var proxy = PlayersController.GetServiceProxy(GetPartitionKey(Id.GetGuidId()));
+            var proxy = PlayersController.GetPlayerServiceProxy(GetPartitionKey(Id.GetGuidId()));
 
             await proxy.DeletePlayerAsync(Id.GetGuidId(), CancellationToken.None);
             GameConsoleEventSource.Current.Message($"[USER.DELETE]: {Id} logged out.");

@@ -1,4 +1,7 @@
+C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.exe
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\WebAPI.exe
+C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.deps.json
+C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.runtimeconfig.json
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\appsettings.Development.json
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\appsettings.json
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\WebAPI.dll
@@ -383,8 +386,10 @@ C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\de-DE\Faker.Net.5.0.resources.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\libuv.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\Common.dll
+C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.Model.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\UserActor.Interfaces.dll
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.Model.pdb
+C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\PlayerCollection.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\UserActor.Interfaces.pdb
 C:\Users\vlada\source\repos\OnboardingApplication\WebAPI\obj\Debug\net5.0\win7-x64\PubTmp\Out\Common.pdb

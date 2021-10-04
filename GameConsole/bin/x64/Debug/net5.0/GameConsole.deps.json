@@ -1377,6 +1377,15 @@
           "Common.dll": {}
         }
       },
+      "PlayerCollection/1.0.0": {
+        "dependencies": {
+          "Microsoft.ServiceFabric.Services": "5.1.329",
+          "PlayerCollection.Model": "1.0.0"
+        },
+        "runtime": {
+          "PlayerCollection.dll": {}
+        }
+      },
       "PlayerCollection.Model/1.0.0": {
         "dependencies": {
           "Common": "1.0.0",
@@ -1400,6 +1409,7 @@
         "dependencies": {
           "Microsoft.ServiceFabric.AspNetCore.Kestrel": "5.1.329",
           "Newtonsoft.Json": "13.0.1",
+          "PlayerCollection": "1.0.0",
           "PlayerCollection.Model": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.2",
           "UserActor.Interfaces": "1.0.0"
@@ -2194,6 +2204,11 @@
       "hashPath": "system.threading.timer.4.0.1.nupkg.sha512"
     },
     "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PlayerCollection/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -68,12 +68,12 @@ namespace Common
             return from i in Enumerable.Range(0, n) select new Tuple<BigInteger, BigInteger>(range.Item1 + i * w, range.Item1 + (i + 1) * w);
         }
 
-        public static IEnumerable<BigInteger> GetPartitionsLowKey(Tuple<long, long> range, int n)
+        public static List<Int64> GetPartitionsLowKey(int n)
         {
-            BigInteger diff = BigInteger.Subtract(range.Item2, range.Item1);
+            BigInteger diff = BigInteger.Subtract(Int64.MaxValue, Int64.MinValue);
             BigInteger w = BigInteger.Divide(diff, n);
 
-            List<BigInteger> res = (from i in Enumerable.Range(0, n) select new BigInteger((Int64)(range.Item1 + i * w + 1))).ToList();
+            List<Int64> res = (from i in Enumerable.Range(0, n) select ((Int64)new BigInteger((Int64)(Int64.MinValue + i * w + 1)))).ToList();
             res[0] -= 1;
 
             return res;

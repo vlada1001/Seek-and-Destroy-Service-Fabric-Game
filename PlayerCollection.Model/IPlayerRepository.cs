@@ -14,5 +14,6 @@ namespace PlayerCollection.Model
         Task MovePlayersAsync(CancellationToken cancellationToken = default);
         Task<Player> GetPlayerAsync(Guid playerId, CancellationToken cancellationToken = default);
         Task UpdatePlayerAsync(Player updatedPlayer, CancellationToken cancellationToken = default);
+        Task<int> GetActivePlayerCount(CancellationToken cancellationToken = default);
     }
 }

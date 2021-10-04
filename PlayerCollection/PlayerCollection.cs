@@ -12,9 +12,25 @@ using System.Threading.Tasks;
 
 namespace PlayerCollection
 {
+    public static class Constants
+    {
+        public const int PartitionCount = 3;
+        public const int MinPartitionCount = 3;
+        public const int MaxPartitionCount = 10;
+        public const int UpperLoadTreshold = 500;
+        public const int LowerLoadTreshold = 400;
+        public const string ServiceLoadMetricName = "ActivePlayers";
+        public const int ScaleIncrement = 1;
+        public static readonly TimeSpan ScaleInterval = TimeSpan.FromMinutes(1);
+        public static readonly TimeSpan ReportingInterval = TimeSpan.FromSeconds(15);
+    }
+
     internal sealed class PlayerCollection : StatefulService, IPlayerCollectionService, IService
     {
+
         private IPlayerRepository _playerRepository;
+        private static int _partitionCounter = 3;
+
 
         public PlayerCollection(StatefulServiceContext context)
             : base(context)
@@ -64,6 +80,11 @@ namespace PlayerCollection
                 await _playerRepository.UpdatePlayerAsync(player, cancellationToken);
         }
 
+        public async Task<int> GetActivePlayerCount(CancellationToken cancellationToken = default)
+        {
+            return await _playerRepository.GetActivePlayerCount(cancellationToken);
+        }
+
         protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
         {
             return new[]
@@ -77,6 +98,16 @@ namespace PlayerCollection
         {
             if (_playerRepository == null)
                 _playerRepository = new SFPlayerRepository(StateManager);
+        }
+
+        public Task<List<Int64>> GetPartitionsLowKey(CancellationToken cancellationToken = default)
+        {
+            return Task.FromResult(Common.Library.GetPartitionsLowKey(_partitionCounter));
+        }
+
+        public Task<int> GetPartitionCount(CancellationToken cancellationToken = default)
+        {
+            return Task.FromResult(_partitionCounter);
         }
     }
 }

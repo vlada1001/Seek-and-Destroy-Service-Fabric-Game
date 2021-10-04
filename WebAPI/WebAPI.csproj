@@ -18,6 +18,8 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\PlayerCollection.Model\PlayerCollection.Model.csproj" />
+		<ProjectReference Include="..\PlayerCollection\PlayerCollection.csproj" />
+		<ProjectReference Include="..\PlayerOrchestrator.Interfaces\PlayerOrchestrator.Interfaces.csproj" />
 		<ProjectReference Include="..\UserActorService.Interfaces\UserActor.Interfaces.csproj" />
 	</ItemGroup>
 
