@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Numerics;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -55,6 +58,25 @@ namespace Common
                 hash = md5.Hash;
             }
             return BitConverter.ToInt64(hash);
+        }
+
+        public static IEnumerable<Tuple<BigInteger, BigInteger>> SplitInterval(Tuple<long, long> range, int n)
+        {
+            BigInteger diff = BigInteger.Subtract(range.Item2, range.Item1);
+            BigInteger w = BigInteger.Divide(diff, n);
+
+            return from i in Enumerable.Range(0, n) select new Tuple<BigInteger, BigInteger>(range.Item1 + i * w, range.Item1 + (i + 1) * w);
+        }
+
+        public static IEnumerable<BigInteger> GetPartitionsLowKey(Tuple<long, long> range, int n)
+        {
+            BigInteger diff = BigInteger.Subtract(range.Item2, range.Item1);
+            BigInteger w = BigInteger.Divide(diff, n);
+
+            List<BigInteger> res = (from i in Enumerable.Range(0, n) select new BigInteger((Int64)(range.Item1 + i * w + 1))).ToList();
+            res[0] -= 1;
+
+            return res;
         }
     }
 }

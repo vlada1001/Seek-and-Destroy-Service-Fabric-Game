@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="UserActorPkg" Version="2.0.5" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+<ServiceManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="UserActorPkg" Version="3.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <ServiceTypes>
     <StatefulServiceType ServiceTypeName="UserActorServiceType" HasPersistedState="true">
       <Extensions>
@@ -16,14 +16,14 @@
       </Extensions>
     </StatefulServiceType>
   </ServiceTypes>
-  <CodePackage Name="Code" Version="2.0.5">
+  <CodePackage Name="Code" Version="3.0.0">
     <EntryPoint>
       <ExeHost>
         <Program>UserActor.exe</Program>
       </ExeHost>
     </EntryPoint>
   </CodePackage>
-  <ConfigPackage Name="Config" Version="1.0.0" />
+  <ConfigPackage Name="Config" Version="3.0.0" />
   <Resources>
     <Endpoints>
       <Endpoint Name="UserActorServiceEndpointV2" />

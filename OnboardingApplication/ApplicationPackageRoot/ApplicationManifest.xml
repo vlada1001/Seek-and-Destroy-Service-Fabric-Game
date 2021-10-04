@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="OnboardingApplicationType" ApplicationTypeVersion="2.0.5" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="OnboardingApplicationType" ApplicationTypeVersion="3.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
     <Parameter Name="WebAPI_ASPNETCORE_ENVIRONMENT" DefaultValue="" />
     <Parameter Name="WebAPI_InstanceCount" DefaultValue="-1" />
@@ -7,22 +7,22 @@
     <Parameter Name="UserActorService_MinReplicaSetSize" DefaultValue="3" />
     <Parameter Name="UserActorService_TargetReplicaSetSize" DefaultValue="3" />
     <Parameter Name="PlayerCollection_MinReplicaSetSize" DefaultValue="3" />
-    <Parameter Name="PlayerCollection_PartitionCount" DefaultValue="1" />
+    <Parameter Name="PlayerCollection_PartitionCount" DefaultValue="3" />
     <Parameter Name="PlayerCollection_TargetReplicaSetSize" DefaultValue="3" />
   </Parameters>
   <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
        should match the Name and Version attributes of the ServiceManifest element defined in the 
        ServiceManifest.xml file. -->
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="UserActorPkg" ServiceManifestVersion="2.0.5" />
+    <ServiceManifestRef ServiceManifestName="UserActorPkg" ServiceManifestVersion="3.0.0" />
     <ConfigOverrides />
   </ServiceManifestImport>
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="PlayerCollectionPkg" ServiceManifestVersion="2.0.5" />
+    <ServiceManifestRef ServiceManifestName="PlayerCollectionPkg" ServiceManifestVersion="3.0.0" />
     <ConfigOverrides />
   </ServiceManifestImport>
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="WebAPIPkg" ServiceManifestVersion="2.0.5" />
+    <ServiceManifestRef ServiceManifestName="WebAPIPkg" ServiceManifestVersion="3.0.0" />
     <ConfigOverrides />
     <EnvironmentOverrides CodePackageRef="code">
       <EnvironmentVariable Name="ASPNETCORE_ENVIRONMENT" Value="[WebAPI_ASPNETCORE_ENVIRONMENT]" />
