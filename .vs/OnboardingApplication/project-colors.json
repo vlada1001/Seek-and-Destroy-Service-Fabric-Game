@@ -40,7 +40,22 @@
       "ProjectGuid": "2009e0ce-7255-4c7f-b5c5-da490663394c",
       "DisplayName": "WebAPI",
       "ColorIndex": 6
+    },
+    "29c1e4e5-cc60-4445-8f83-b06fdc7d8c7e": {
+      "ProjectGuid": "29c1e4e5-cc60-4445-8f83-b06fdc7d8c7e",
+      "DisplayName": "GameConsole",
+      "ColorIndex": 7
+    },
+    "d079134d-d25e-4f3e-9bdd-67405d03fce1": {
+      "ProjectGuid": "d079134d-d25e-4f3e-9bdd-67405d03fce1",
+      "DisplayName": "Common",
+      "ColorIndex": 8
+    },
+    "46a7075c-7257-4135-a83b-cd1c5c52311f": {
+      "ProjectGuid": "46a7075c-7257-4135-a83b-cd1c5c52311f",
+      "DisplayName": "UserActor.Interfaces",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 10
 }

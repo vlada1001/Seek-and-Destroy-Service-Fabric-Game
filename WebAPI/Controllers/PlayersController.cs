@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using PlayerCollection.Model;
-using UserOrchestrator.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UserOrchestrator.Interfaces;
 
 namespace WebAPI.Controllers
 {
@@ -78,6 +78,21 @@ namespace WebAPI.Controllers
         public async Task<Int64> GetActivePlayersCountAsync()
         {
             return await GetUserOrchestratorServiceProxy().GetActivePlayersCountAsync();
+        }
+
+        [HttpGet("delete")]
+        public async Task DeleteRandomPlayers([FromQuery] int count)
+        {
+            var playersRes = await GetPlayersAsync();
+            var enumerator = playersRes.GetEnumerator();
+
+            var rand = new Random();
+
+            for (var i = 0; i < count; i++)
+            {
+                await DeletePlayerAsync(Guid.Parse(enumerator.Current.Id));
+                enumerator.MoveNext();
+            }
         }
 
         public static IUserOrchestrator GetUserOrchestratorServiceProxy()
